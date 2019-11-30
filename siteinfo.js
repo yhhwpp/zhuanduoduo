@@ -1,5 +1,5 @@
 module.exports = {
-    name: "一起吧源码",
+    name: "赚多多",
     uniacid: "3",
     acid: "3",
     multiid: "1.0.0",
