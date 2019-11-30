@@ -1,5 +1,5 @@
 <view class="beiji_view" wx:for="{{navItem.goodslist}}" wx:for-index="idx" wx:for-item="tabItem" wx:key="id">
-    <view class="beiji_viewlist">
+    <view class="beiji_viewlist" wx:if="{{tabItem.commission > 0}}">
         <view class="beiji_viewlist_imges">
             <image bindtap="details" data-couponUrl="{{tabItem.couponInfo.couponList[0].link}}" data-hui="{{tabItem.coupon_remain_quantity}}" data-id="{{tabItem.goods_id}}" data-itemUrl="{{tabItem.itemUrl}}" data-jump="{{navItem.jump}}" data-materialUrl="{{tabItem.materialUrl}}" data-skuId="{{tabItem.skuId}}" src="{{tabItem.goods_thumbnail_url}}"></image>
             <button data-couponUrl="{{tabItem.couponInfo.couponList[0].link}}" data-goods_title="{{tabItem.goods_title}}" data-id="{{tabItem.goods_id}}" data-itemUrl="{{tabItem.itemUrl}}" data-jump="{{navItem.jump}}" data-materialUrl="{{tabItem.materialUrl}}" data-name="{{tabItem.goods_name}}" data-skuId="{{tabItem.skuId}}" data-src="{{tabItem.goods_thumbnail_url}}" openType="share">

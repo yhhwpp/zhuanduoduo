@@ -21,7 +21,7 @@
                         <image src="{{navItem.toppic}}"></image>
                     </view>
                     <view class="beiji_view" wx:for="{{topgoodslist}}" wx:for-index="idx" wx:for-item="tabItem" wx:key="id">
-                        <view class="beiji_viewlist">
+                        <view class="beiji_viewlist" wx:if="{{tabItem.coupon_discount != 0}}">
                             <view class="beiji_viewlist_imges">
                                 <image bindtap="details" data-couponUrl="{{tabItem.couponInfo.couponList[0].link}}" data-hui="{{tabItem.coupon_remain_quantity}}" data-id="{{tabItem.goods_id}}" data-itemUrl="{{tabItem.itemUrl}}" data-jump="{{navItem.jump}}" data-materialUrl="{{tabItem.materialUrl}}" data-skuId="{{tabItem.skuId}}" data-wphid="{{tabItem.goodsId}}" src="{{tabItem.goods_thumbnail_url}}"></image>
                                 <button data-couponUrl="{{tabItem.couponInfo.couponList[0].link}}" data-goods_title="{{tabItem.goods_title}}" data-id="{{tabItem.goods_id}}" data-itemUrl="{{tabItem.itemUrl}}" data-jump="{{navItem.jump}}" data-materialUrl="{{tabItem.materialUrl}}" data-name="{{tabItem.goods_name}}" data-skuId="{{tabItem.skuId}}" data-src="{{tabItem.goods_thumbnail_url}}" openType="{{user_id?'share':''}}">
@@ -34,16 +34,21 @@
                                     <image src="../../resource/images/mg.png" wx:if="{{navItem.jump==1}}"></image>
                                     <image src="../../resource/images/jd.png" wx:elif="{{navItem.jump==7}}"></image>
                                     <image src="../../resource/images/pd.png" wx:else></image>
-                        {{tabItem.goods_name}}
-                      </view>
+                                    {{tabItem.goods_name}}
+                                </view>
                                 <view class="beiji_viewlist_price">
-                                    <view class="beiji_viewlist_sommol">￥
-                          <text>{{tabItem.now_price}}</text>
+                                    <view class="beiji_viewlist_sommol">
+                                        ￥
+                                        <text>{{tabItem.now_price}}</text>
                                     </view>
-                                    <text class="beiji_viewlist_sommole">￥{{tabItem.min_group_price}}</text>
+                                    <text class="beiji_viewlist_sommole">
+                                        ￥{{tabItem.min_group_price}}
+                                    </text>
                                 </view>
                                 <view class="beiji_viewlist_zbotm">
-                                    <text class="beiji_viewlist_zbotmyua">已拼{{tabItem.sold_quantity}}单</text>
+                                    <text class="beiji_viewlist_zbotmyua">
+                                        已拼{{tabItem.sold_quantity}}单
+                                    </text>
                                     <view class="beiji_viewlist_zuan">
                                         <image src="../../resource/images/yuan3.png"></image>
                                         <view class="beiji_viewlist_zuantxt">
@@ -56,7 +61,7 @@
                         </view>
                     </view>
                     <view class="beiji_view" wx:for="{{listArr[idx]}}" wx:for-index="idx" wx:for-item="tabItem" wx:key="id">
-                        <view class="beiji_viewlist">
+                        <view class="beiji_viewlist" wx:if="{{tabItem.coupon_discount != 0}}">
                             <view class="beiji_viewlist_imges">
                                 <image bindtap="details" data-couponUrl="{{tabItem.couponInfo.couponList[0].link}}" data-hui="{{tabItem.coupon_remain_quantity}}" data-id="{{tabItem.goods_id}}" data-itemUrl="{{tabItem.itemUrl}}" data-jump="{{navItem.jump}}" data-materialUrl="{{tabItem.materialUrl}}" data-skuId="{{tabItem.skuId}}" data-wphid="{{tabItem.goodsId}}" src="{{tabItem.goods_thumbnail_url}}"></image>
                                 <button data-couponUrl="{{tabItem.couponInfo.couponList[0].link}}" data-goods_title="{{tabItem.goods_title}}" data-id="{{tabItem.goods_id}}" data-itemUrl="{{tabItem.itemUrl}}" data-jump="{{navItem.jump}}" data-materialUrl="{{tabItem.materialUrl}}" data-name="{{tabItem.goods_name}}" data-skuId="{{tabItem.skuId}}" data-src="{{tabItem.goods_thumbnail_url}}" openType="{{user_id?'share':''}}">
@@ -70,16 +75,21 @@
                                     <image src="../../resource/images/jd.png" wx:elif="{{navItem.jump==7}}"></image>
                                     <image src="../../resource/images/wph.png" wx:elif="{{navItem.jump==8}}"></image>
                                     <image src="../../resource/images/pd.png" wx:else></image>
-                        {{tabItem.goods_name}}
-                      </view>
+                                    {{tabItem.goods_name}}
+                                </view>
                                 <view class="beiji_viewlist_price">
-                                    <view class="beiji_viewlist_sommol">￥
-                          <text>{{tabItem.now_price}}</text>
+                                    <view class="beiji_viewlist_sommol">
+                                        ￥
+                                        <text>{{tabItem.now_price}}</text>
                                     </view>
-                                    <text class="beiji_viewlist_sommole">￥{{tabItem.min_group_price}}</text>
+                                    <text class="beiji_viewlist_sommole">
+                                        ￥{{tabItem.min_group_price}}
+                                    </text>
                                 </view>
                                 <view class="beiji_viewlist_zbotm">
-                                    <text class="beiji_viewlist_zbotmyua" style="opacity:{{navItem.jump==8?0:100}}">已拼{{tabItem.sold_quantity}}单</text>
+                                    <text class="beiji_viewlist_zbotmyua" style="opacity:{{navItem.jump==8?0:100}}">
+                                        已拼{{tabItem.sold_quantity}}单
+                                    </text>
                                     <view class="beiji_viewlist_zuan">
                                         <image src="../../resource/images/yuan3.png"></image>
                                         <view class="beiji_viewlist_zuantxt">

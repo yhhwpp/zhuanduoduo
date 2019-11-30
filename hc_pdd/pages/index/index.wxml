@@ -56,7 +56,9 @@
         <view class="entermodule_uk">
             <form bindsubmit="submitIngroom" class="entermodule_ukleft" data-id="2" reportSubmit="true">
                 <button class="" formType="submit" hoverClass="none" style="margin-left:0;">
-                    <text class="entermodule_title" style="color:{{bacolor}};">{{show.rexiao1}}</text>
+                    <text class="entermodule_title" style="color:{{bacolor}};">
+                        {{show.rexiao1}}
+                    </text>
                     <text class="entermodule_content">{{show.rexiao2}}</text>
                     <image src="{{show.show2}}"></image>
                 </button>
@@ -87,8 +89,8 @@
                 <text style="color:{{bacolor}};">爆款推荐</text>
                 <text style="color:{{bacolor}};">小编每日更新</text>
                 <view class="entermodule_mo">
-          更多
-          <image src="../../resource/images/xisa.png"></image>
+                    更多
+                    <image src="../../resource/images/xisa.png"></image>
                 </view>
             </view>
             <scroll-view scrollX class="entermodule_scroll-view" style="width: 100%">
@@ -97,10 +99,13 @@
                         <image src="{{item.goods_thumbnail_url}}"></image>
                         <text class="entermodule_scroll_title">{{item.goods_name}}</text>
                         <view class="entermodule_scroll-xia">
-                            <view class="entermodule_scroll-left">券后
-                <text>￥{{item.now_price}}</text>
+                            <view class="entermodule_scroll-left">
+                                券后
+                                <text>￥{{item.now_price}}</text>
                             </view>
-                            <text class="entermodule_scroll-lefttext">{{item.coupon_discount}}元券</text>
+                            <text class="entermodule_scroll-lefttext">
+                                {{item.coupon_discount}}元券
+                            </text>
                         </view>
                     </button>
                 </form>
@@ -114,12 +119,14 @@
         </button>
     </form>
     <view class="jingxu fix_css" id="affix" style="top:{{winowtopheight}}px" wx:if="{{fix}}">
-        <text bindtap="threeterminal" class="{{jingxu_index==index?'whitecolor':''}}" data-index="{{item.parameter}}" wx:for="{{jingxu}}" wx:key="id">{{item.name}}</text>
+        <view bindtap="threeterminal" class="{{jingxu_index==index?'whitecolor':''}}" data-index="{{item.parameter}}" wx:for="{{jingxu}}" wx:key="id">
+            {{item.name}}
+        </view>
     </view>
     <template is="batten" data="{{parameter:parameter,kaiguan:kaiguan,is_wph:is_wph}}"></template>
     <view class="pioh"></view>
     <view class="sahngf">
-        <view class="sahngf_xun" data-id="{{item.goods_id}}" data-src="{{item.coupon_remain_quantity}}" wx:if="{{parameter==0}}" wx:for="{{toplist}}">
+        <view class="sahngf_xun" wx:if="{{item.coupon_discount>0}}" data-id="{{item.goods_id}}" data-src="{{item.coupon_remain_quantity}}" wx:if="{{parameter==0}}" wx:for="{{toplist}}">
             <view class=".sahngf_xunimg">
                 <image bindtap="details" class="sahngf_xunimg" data-couponUrl="{{item.couponInfo.couponList[0].link}}" data-hui="{{item.coupon_remain_quantity}}" data-id="{{item.goods_id}}" data-itemUrl="{{item.itemUrl}}" data-materialUrl="{{item.materialUrl}}" data-skuId="{{item.skuId}}" src="{{item.goods_thumbnail_url}}"></image>
                 <button data-couponUrl="{{item.couponInfo.couponList[0].link}}" data-goods_title="{{item.goods_title}}" data-id="{{item.goods_id}}" data-itemUrl="{{item.itemUrl}}" data-materialUrl="{{item.materialUrl}}" data-name="{{item.goods_name}}" data-shen="{{shenhe}}" data-skuId="{{item.skuId}}" data-src="{{item.goods_thumbnail_url}}" hidden="{{shenhe==0}}" openType="{{user_id?'share':''}}">
@@ -131,8 +138,8 @@
                 <button class="sahngf_view" formType="submit" hoverClass="none">
                     <view class="sahngf_view_tite">
                         <image class="sahngf_view_img" src="{{sahngf_view_img}}"></image>
-            {{item.goods_name}}
-          </view>
+                        {{item.goods_name}}
+                    </view>
                     <view class="beiji_viewlist_price">
                         <view class="beiji_viewlist_sommol">
                             <text class="beiji_ic">￥</text>
@@ -141,7 +148,9 @@
                         <text class="beiji_viewlist_sommole">￥{{item.min_group_price}}</text>
                     </view>
                     <view class="beiji_viewlist_zbotm">
-                        <text class="beiji_viewlist_zbotmyua" style="opacity:{{is_wph&&parameter==3?0:1}}">已拼{{item.sold_quantity}}单</text>
+                        <text class="beiji_viewlist_zbotmyua" style="opacity:{{is_wph&&parameter==3?0:1}}">
+                            已拼{{item.sold_quantity}}单
+                        </text>
                         <view class="beiji_viewlist_zuan">
                             <image src="../../resource/images/yuan3.png"></image>
                             <view class="beiji_viewlist_zuantxt">
@@ -194,9 +203,7 @@
     <view class="copy_viewvo">
         <image bindtap="sousuquxa" class="copy_viewvox" src="../../resource/images/guna.png"></image>
         <image class="copy_viewvo_img" src="../../resource/images/so.png"></image>
-        <view class="copy_viewvo_txt">
-      {{copytext}}
-    </view>
+        <view class="copy_viewvo_txt">{{copytext}}</view>
         <view class="copy_viewvo_sa">
             <text bindtap="sousuquxa">取消</text>
             <text bindtap="sousuoc">搜索</text>
