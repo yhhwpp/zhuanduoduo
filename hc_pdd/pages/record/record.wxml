@@ -207,13 +207,21 @@
                         <text>总佣金</text>
                         <text>{{tongji[perid].he}}元</text>
                     </view>
-                    <view bindtap="tixian" class="personal_wallet_bt">
+                    <!-- <view bindtap="tixian" class="personal_wallet_bt">
                         <view class="personal_wallet_btn_via_xi">
                             <text>总计：</text>
                             <text>提现></text>
                         </view>
                         <text class="personal_wallet_bt_te">{{aica.money}}元</text>
+                    </view> -->
+
+                    <view class="personal_wallet_btn_via personal_wallet_btn_via__lst">
+                       
+                            <text>总佣金</text>
+                            <text>{{aica.money}}元</text>
+                        
                     </view>
+
                 </view>
             </view>
         </view>

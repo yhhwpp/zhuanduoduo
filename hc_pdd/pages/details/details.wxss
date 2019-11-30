@@ -415,9 +415,10 @@ button::after {
 }
 
 .hfioa {
-  background: #ea4d46;
+  background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+  box-shadow: 0 4rpx 15rpx 0 rgba(252, 104, 110, 0.75);
+  background-size: 300% 100%;
   border-radius: 50rpx;
-  border: 1rpx solid #ea4d46;
   color: #fff;
   font-size: 32rpx;
   display: flex;

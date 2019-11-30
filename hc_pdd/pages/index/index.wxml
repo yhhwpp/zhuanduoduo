@@ -107,7 +107,15 @@
             </scroll-view>
         </view>
     </view>
-
+    <form bindsubmit="submitInfo" class="baohun" reportSubmit="true">
+        <button class="gdzltz" formType="submit" hoverClass="none">
+            <image src="../../resource/images/cai.png"></image>
+            <text>猜你喜欢</text>
+        </button>
+    </form>
+    <view class="jingxu fix_css" id="affix" style="top:{{winowtopheight}}px" wx:if="{{fix}}">
+        <text bindtap="threeterminal" class="{{jingxu_index==index?'whitecolor':''}}" data-index="{{item.parameter}}" wx:for="{{jingxu}}" wx:key="id">{{item.name}}</text>
+    </view>
     <template is="batten" data="{{parameter:parameter,kaiguan:kaiguan,is_wph:is_wph}}"></template>
     <view class="pioh"></view>
     <view class="sahngf">

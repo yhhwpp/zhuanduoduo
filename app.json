@@ -71,12 +71,6 @@
         "iconPath": "hc_pdd/resource/images/tui2.png",
         "selectedIconPath": "hc_pdd/resource/images/tui1.png"
       },
-	  {
-         "pagePath": "hc_pdd/pages/ties/ties",
-         "text": "发圈",
-         "iconPath": "hc_pdd/resource/images/20181109152747.png",
-         "selectedIconPath": "hc_pdd/resource/images/20181109152747.png"
-      },
       {
         "pagePath": "hc_pdd/pages/soso/soso",
         "text": "超级搜",

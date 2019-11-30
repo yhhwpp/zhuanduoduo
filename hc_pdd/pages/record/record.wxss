@@ -747,6 +747,7 @@ button::after {
 }
 
 .personal_mygroup {
+   display: none;
     width: 100%;
     padding: 0 20rpx;
     background: #fff;
@@ -897,7 +898,7 @@ button::after {
 }
 
 .personal_wallet_btn_via {
-    width: 168rpx;
+    width: 176rpx;
     height: 85rpx;
     border-right: 2rpx solid #b98d2a;
     padding: 4rpx 0;
@@ -906,6 +907,9 @@ button::after {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+.personal_wallet_btn_via__lst {
+  border-right: 0
 }
 
 .personal_wallet_btn_via text {

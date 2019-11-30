@@ -687,6 +687,7 @@ button::after {
     color: #000000;
     font-size: 28rpx;
     line-height: 35rpx;
+    text-align: left;
 }
 .sahngf_view_tite image{
   display: none;
