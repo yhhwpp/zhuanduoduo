@@ -1,0 +1,129 @@
+.denglu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 109;
+}
+
+.denglu_ong {
+    width: 622rpx;
+    margin: 0 auto;
+    margin-top: 73%;
+    height: 439rpx;
+    border-radius: 15rpx;
+    position: relative;
+}
+
+.loginbgi {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20rpx;
+}
+
+.tit1 {
+    font-size: 44rpx;
+    text-shadow: 5rpx 5rpx 5rpx #e79d29;
+    color: #fff;
+    text-align: center;
+    line-height: 140rpx;
+    font-family: '思源黑体';
+}
+
+.business {
+    position: absolute;
+    width: 180rpx;
+    height: 180rpx;
+    left: 0;
+    right: 0;
+    top: 180rpx;
+    margin: 0 auto;
+}
+
+.businessTxt {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 380rpx;
+    margin: 0 auto;
+    text-align: center;
+    color: #212121;
+    font-family: '思源黑体';
+    line-height: 30rpx;
+}
+
+.hr1 {
+    width: 90%;
+    height: 2rpx;
+    background: #e5e5e5;
+    position: absolute;
+    bottom: 290rpx;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.main {
+    font-family: '思源黑体';
+    width: 90%;
+    font-size: 26rpx;
+    position: absolute;
+    bottom: 170rpx;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    line-height: 50rpx;
+}
+
+.main1 {
+    color: #212121;
+}
+
+.main2 {
+    color: #979797;
+}
+
+.btns {
+    width: 90%;
+    height: 60rpx;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 80rpx;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 30rpx;
+}
+
+.exit1 {
+    width: 250rpx;
+    height: 70rpx;
+    background: linear-gradient(to top,#797979 25%,#bdbdbd 75%);
+    border-radius: 35rpx;
+    line-height: 70rpx;
+    color: #fff;
+}
+
+.register {
+    width: 250rpx;
+    height: 70rpx;
+    background: linear-gradient(to top,#fda21c 25%,#ffe27b 75%);
+    border-radius: 35rpx;
+    line-height: 70rpx;
+    color: #fff;
+}
+
+.exit2 {
+    width: 70rpx;
+    height: 70rpx;
+    position: absolute;
+    bottom: -140rpx;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
