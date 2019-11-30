@@ -14,7 +14,6 @@ page {
 
 .huiimg {
     width: 100%;
-    height: 277rpx;
     display: block;
 }
 
