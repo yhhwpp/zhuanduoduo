@@ -72,8 +72,9 @@
             <text>{{config.share}}</text>
         </view>
         <view bindtap="mai" class="bakfvdf hfioa" style="background:{{config.selfcolor}}" wx:if="{{goods.commission!=0}}">
-            <text>¥{{goods.commission}}</text>
-            <text>{{config.self}}</text>
+         自购省  ¥{{goods.commission}}
+            <!-- <text>¥{{goods.commission}}</text>
+            <text>{{config.self}}</text> -->
         </view>
         <image bindtap="fen" class="bakfvdf" src="{{config.zeroshare}}" wx:if="{{shenhe==1&&goods.commission==0}}"></image>
         <view bindtap="mai" class="bakfvdf" wx:if="{{goods.commission==0}}">

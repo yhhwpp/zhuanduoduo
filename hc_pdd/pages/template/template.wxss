@@ -688,7 +688,9 @@ button::after {
     font-size: 28rpx;
     line-height: 35rpx;
 }
-
+.sahngf_view_tite image{
+  display: none;
+}
 .sahngf_view_img {
     width: 30rpx;
     height: 30rpx;

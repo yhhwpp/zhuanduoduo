@@ -24,6 +24,7 @@ App({
                     url: "entry/wxapp/Indexcolorbox",
                     method: "POST",
                     success: function(n) {
+                        if(!n.data) return !1;
                         var e = n.data.data, o = e[0].color;
                         t.globalData.Indexcolorbox = e, t.globalData.bacolor = o;
                     }

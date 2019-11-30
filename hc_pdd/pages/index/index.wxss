@@ -22,6 +22,7 @@ page {
     top: 0;
     height: 120rpx;
     padding: 0;
+    background: #f00
 }
 
 .navigation_img {
@@ -363,6 +364,7 @@ button::after {
     background: #fff;
     top: 0;
     z-index: 10;
+    padding-top: 152rpx;
 }
 
 .daohgf {
@@ -618,7 +620,8 @@ button::after {
     height: 222rpx;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20rpx;
+    margin-bottom: 35rpx;
+
 }
 
 .sahngf_xunimg {
