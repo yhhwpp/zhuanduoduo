@@ -481,8 +481,7 @@ Page({
         var o = this;
         return wx.showToast({
             title: this.data.bacolor,
-            icon: "loading",
-            duration: 1e4
+            icon: "loading"
         }), new Promise(function(i, t) {
             app.util.request({
                 url: "entry/wxapp/Indexcolorbox",
