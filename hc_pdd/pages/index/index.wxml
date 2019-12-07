@@ -2,7 +2,7 @@
 <import src="../batten/batten"></import>
 <view catchtouchmove="{{paper==1&&hongbao.cishushangxian==0?'preventTouchMove':''}}" class="{{paper==1&&hongbao.cishushangxian==0?'population':'onf'}}">
     <view class="fenlei">
-        <view class="navigationbtn" style="background:{{backgroundColor}} {{fix?'':'rgba(255,255,255,0)'}};height:{{winowheight}}px;padding-top:{{paddingTop}}px;">
+        <view class="navigationbtn" style="background:#f00 ;height:{{winowheight}}px;padding-top:{{paddingTop}}px;">
             <view class="daohgf" style="height:{{winowheight}}px;">
                 <form bindsubmit="submitInxauioxi" class="xiaofisa" reportSubmit="true">
                     <view class="redtixing" hidden="{{!is_read}}"></view>

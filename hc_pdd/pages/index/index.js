@@ -310,9 +310,9 @@ Page({
                 url: "entry/wxapp/Shenhe",
                 method: "POST",
                 success: function(a) {
-                    1 == a.data.data.shenhe ? wx.reLaunch({
-                        url: "../trial/trial"
-                    }) : i.home(), t(a.data.message);
+                    // 1 == a.data.data.shenhe ? wx.reLaunch({
+                    //     url: "../trial/trial"
+                    // }) : i.home(), t(a.data.message);
                 },
                 fail: function(a) {
                     e(a.data.message);
@@ -617,7 +617,7 @@ Page({
                         show: n,
                         search_color: i,
                         share_icon: o,
-                        backgroundColor: app.globalData.Headcolor,
+                        // backgroundColor: app.globalData.Headcolor,
                         shenhe: r
                     }, "show", n), _defineProperty(t, "text", l), _defineProperty(t, "theme", c), _defineProperty(t, "config", p), 
                     _defineProperty(t, "hongbao", g), _defineProperty(t, "config", p), _defineProperty(t, "hb", f), 

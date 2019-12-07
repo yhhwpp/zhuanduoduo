@@ -299,7 +299,7 @@ button::after {
 
 .swiper {
     width: 100%;
-    height: 300rpx;
+    height: 296rpx;
 }
 
 .slide-image {
@@ -342,13 +342,17 @@ button::after {
         transform: rotateY(360deg);
     }
 }
-
+.swiper-box {
+  width: 750rpx;
+  height: 296rpx !important;
+}
 .swiper image {
-    width: 100%;
-    height: 100%;
+    width: 750rpx;
+    height: 296rpx;
     margin: 0;
     border: 0;
     display: block;
+    border-radius: 0
 }
 
 .gao {
@@ -1083,7 +1087,7 @@ button::after {
     overflow: hidden;
     background: #fff;
     white-space: nowrap;
-    border-top: 1px solid #d1d4d4;
+    /* border-top: 1px solid #d1d4d4; */
     color: #707070;
     font-size: 12px;
 }
